@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Project</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <figure>
+          <img
+            src="https://imgs.search.brave.com/I6WU857e-ndyycFzV-4s1EjcWzqL37sscd5v67t1vZo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMw/ODQxNjU3NC92ZWN0/b3IvaC1sZXR0ZXIt/c2hhcGUtbG9nby5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/OXJ4TmFlaFVwaDZN/c0kxOVBVbnpMZkxv/bkt2aEdQcEFCQUdh/YmFZczYxMD0"
+            width="50"
+            alt="Some random image found on internet."
+          />
+          <figcaption>
+            HTML-Codecademy (&ltfigcaption&gt is used here).
+          </figcaption>
+        </figure>
+        <ul>
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#lists">Lists</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#anchor">Anchor</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#validations">Validations</a></li>
+          <li><a href="#audio">Audio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro">
+        <h1>Myself <br /><em>KARTHIK CHOCKALINGAM V</em></h1>
+        <article>
+          <p>Learning <strong>HTML</strong> with basic project.</p>
+        </article>
+        <aside>
+          This page is fully made with <em><b>Semantic HTML</b></em> and the
+          line which you are reading is written on <em>&ltaside&gt</em> tag.
+        </aside>
+      </section>
+      <section id="lists">
+        <h4>There are 3 types of lists in <b>HTML</b></h4>
+        <ol>
+          <li>Ordered List</li>
+          <li>Unordered List</li>
+          <li>Description List</li>
+        </ol>
+        <h3>Ordered List</h3>
+        <article>
+          Ordered List will list the &ltli&gt elements in numerical order .
+        </article>
+        <h3>Unordered List</h3>
+        <article>
+          Unordered List will list the &ltli&gt elements in bulleted points .
+        </article>
+        <h3>Description/Definition List</h3>
+        <article>
+          Description List will is slightly different.<br />&ltdl&gt means
+          description list. <br />&ltdt&gt means description tags.<br />&ltdd&gt
+          means describing factor
+        </article>
+        <dl>
+          <dt>HTML</dt>
+          <dd>-Learnt from Codecademy</dd>
+          <dt>CSS</dt>
+          <dd>-Yet to start Learning</dd>
+        </dl>
+      </section>
+      <section id="video">
+        <h3>Videos</h3>
+        <embed src="https://www.youtube.com/embed/qz0aGYrrlhU" />
+        <p>Youtube videos can only be played with &ltembed&gt tags.</p>
+      </section>
+      <section id="anchor">
+        <h3>Anchor Tag</h3>
+        <!--Absolute path will redirect you to another website/webpage and here i'm using comments-->
+        <a href="https://www.linkedin.com/in/karthik-chockalingam6/"
+          >Click this to open link in current tab (Absolute Path)</a
+        ><br />
+        <a
+          href="https://www.linkedin.com/in/karthik-chockalingam6/"
+          target="'_blank"
+          >Click this to open link in new tab (Absolute Path)</a
+        ><br />
+        <a href="Project1Page2.html">Relative path anchor tag</a>
+      </section>
+      <section id="tables">
+        <h3>Tables</h3>
+        <table>
+          <tr>
+            <th>Chocolate name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Dairy Milk</td>
+            <td>1</td>
+            <td>40</td>
+          </tr>
+          <tr>
+            <td>Just Jelly</td>
+            <td>50</td>
+            <td>50</td>
+          </tr>
+        </table>
+      </section>
+      <section id="forms">
+        <h3>Forms</h3>
+        <form action="Project1Page2.html" method="POST">
+          <label for="username">Username: </label>
+          <input
+            name="username"
+            id="username"
+            type="text"
+            value="CHO"
+            required
+            pattern="^[A-Za-z]+$"
+            placeholder="only alphabets allowed"
+          />
+          <br />
+          <label for="password">Password: </label>
+          <input
+            name="password"
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+            minlength="8"
+            maxlength="15"
+          /><br />
+          <label for="age">Age: </label>
+          <input
+            name="age"
+            id="age"
+            type="number"
+            min="18"
+            max="60"
+            step="2"
+          /><br />
+          <label for="experience">Experience: </label>
+          <input
+            name="experience"
+            id="experience"
+            type="range"
+            min="0"
+            max="5"
+            step="0.1"
+          /><br />
+          <p>Technologies known:</p>
+          <label for="html">HTML</label>
+          <input name="html" id="html" type="checkbox" value="html" />
+          <label for="css">CSS</label>
+          <input name="css" id="css" type="checkbox" value="css" />
+          <label for="js">JavaScript</label>
+          <input name="js" id="js" type="checkbox" value="js" />
+          <br />
+          <label>Accept the invisible terms and conditions ?</label>
+          <label for="radio1">Yes</label>
+          <input type="radio" name="radiogrp" id="radio1" value="y" />
+          <label for="radio2">No</label>
+          <input type="radio" name="radiogrp" id="radio2" value="n" />
+          <br />
+          <label for="preference">Preference: </label>
+          <select name="preference" id="preference">
+            <option value="onsite">On-Site</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="wfh">Work from Home</option></select
+          ><br />
+          <label for="datalist">Favorite Food: </label>
+          <input list="datalist123" />
+          <datalist id="datalist123" name="datalist">
+            <option value="biriyani">Biriyani</option>
+            <option value="cake">Cake</option>
+            <option value="frenchfries">French Fries</option>
+            <option value="pizza">Pizza</option>
+            <option value="null">
+              You can type your own food or search
+            </option></datalist
+          ><br />
+          <label for="bigtextbox">Address: </label>
+          <textarea
+            rows="5"
+            cols="50"
+            id="bigtextbox"
+            name="address"
+            placeholder="rows and cols attributes are mandatory"
+          >
+          </textarea
+          ><br />
+          <input type="submit" value="Submit the Form here" />
+        </form>
+      </section>
+      <section id="validations">
+        <h3>Validations</h3>
+        <p>
+          Validations are used in the above form (client-side validations).
+          <br />Validations like required, min, max, minlength, maxlength,
+          pattern are used.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <h4>Thank You for viewing this <b>ONLY HTML PAGE</b></h4>
+      <h6>
+        Contact :
+        <a href="https://www.linkedin.com/in/karthik-chockalingam6/"
+          >LinkedIn</a
+        >
+      </h6>
+      <audio id="audio" controls>
+        <source src="thankyou_audio.wav" />
+      </audio>
+    </footer>
+  </body>
+</html>
